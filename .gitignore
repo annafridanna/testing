@@ -1,9 +1,9 @@
 *.sln
 .vs/
-lab9/*.csproj
-bin/
-obj/
-/packages/
+SerchFlightsTest/*.csproj
+*/bin/
+*/obj/
+*/packages/
 riderModule.iml
 /_ReSharper.Caches/
 
