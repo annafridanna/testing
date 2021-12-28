@@ -70,9 +70,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\FrightsSearchResultPage.cs" />
+    <Compile Include="Pages\HomeHotelsPage.cs" />
     <Compile Include="Pages\HomeFligtsPage.cs" />
     <Compile Include="Pages\Page.cs" />
-    <Compile Include="TestFlightsSearch.cs" />
+    <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

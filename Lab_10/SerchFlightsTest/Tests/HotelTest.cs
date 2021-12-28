@@ -17,6 +17,7 @@ namespace SearchFlightsTest.Tests
         {
             var page = new HotelPage(Driver);
             page.OpenPage();
+            Thread.Sleep(500);
             return page.FindHotels(DataReader.TravelData);
         }
 
@@ -39,7 +40,7 @@ namespace SearchFlightsTest.Tests
             Thread.Sleep(3000);
             Assert.IsTrue(roomPage.CurrentUrl.Equals(roomPage.EntryUrl));
         }
-
+        /*
         [Test]
         public void BookRoom()
         {
@@ -51,6 +52,6 @@ namespace SearchFlightsTest.Tests
             Thread.Sleep(3000);
             Assert.IsTrue(bookPage.BookingForm.Displayed);
         }
-
+        */
     }
 }

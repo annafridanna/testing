@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,11 @@ namespace SearchFlightsTest.Pages
 
         public BookPage Book()
         {
-            BookBTN.Click();
+            var element = BookBTN;
+            Actions actions = new Actions(WebDriver);
+            actions.MoveToElement(element);
+            actions.Perform();
+            element.Click();
             return new BookPage(WebDriver);
         }
     }

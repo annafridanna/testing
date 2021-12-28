@@ -17,9 +17,8 @@ async function example(){
     let url = "https://skiplagged.com/flights/LAX/WAW/2021-12-26"
     await driver.sleep(3000);
     let newurl = await driver.getCurrentUrl();
-    console.log("old url: ", newurl,"  new url: ",newurl);
     assert.equal(url, newurl);
-    console.log(assert.equal(url, newurl))
     await driver.quit();
+
 }
 example();

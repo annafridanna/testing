@@ -10,8 +10,8 @@ using OpenQA.Selenium.Support.UI;
 using System.Threading;
 
 namespace SerchFlightsTest 
-{
-    
+{       
+
     public class HomeFligtsPage : Page
     {
         public HomeFligtsPage(IWebDriver webDriver) : base(webDriver, "https://skiplagged.com/flights/MSQ/2021-12-30") { }
@@ -20,6 +20,8 @@ namespace SerchFlightsTest
         public IWebElement ToPlaceField => FindBy(By.ClassName("dst-input"));
         public IWebElement SearchBTN => FindBy(By.ClassName("blue-btn"));
         public IWebElement SearchResults => FindBy(By.ClassName("trip-list"));
+
+        public IWebElement HotelsRef => FindBy(By.LinkText("Hotels"));
 
         public HomeFligtsPage EnterFromPlace(string place)
         {

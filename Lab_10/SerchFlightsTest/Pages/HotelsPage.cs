@@ -31,11 +31,11 @@ namespace SearchFlightsTest.Pages
         {
             if (td.To != null)
                 EnterPlace(td.To);
-
+            Thread.Sleep(100);
             if (td.StartDate != null)
                 EnterDate(StartDateField, td.StartDate);
 
-
+            Thread.Sleep(100);
             if (td.EndDate != null)
                 EnterDate(EndDateField, td.EndDate);
 
